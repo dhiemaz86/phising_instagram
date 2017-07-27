@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'bad_blockhead';
+    src: url('/fonts/blockhead-webfont.eot');
+    src: url('/fonts/blockhead-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/blockhead-webfont.woff2') format('woff2'),
+         url('/fonts/blockhead-webfont.woff') format('woff'),
+         url('/fonts/blockhead-webfont.ttf') format('truetype'),
+         url('/fonts/blockhead-webfont.svg#bad_blockheadbad_blockhead') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    display: none; 
+}
+::-webkit-scrollbar-track {
+    display: none; 
+}
+::-webkit-scrollbar-thumb {
+    display: none; 
+}
+::-webkit-scrollbar-thumb:hover {
+    display: none; 
+}
+::-webkit-scrollbar-thumb:active {
+    display: none; 
+}
+::-webkit-scrollbar-corner {
+    display: none; 
+}
+::-webkit-resizer {
+    display: none; 
+}
+body {
+    background-image: url("ngz/background.jpg");
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.round-10 {
+    border-radius: 10px;
+}
+#config-screen {
+    background-image: url("http://s4.postimg.org/h16hofmt9/fti_shadow.png");
+    margin-top: 20px;
+    padding: 1% 2%;
+}
+#coc-header {
+    height: 25px;
+    padding: 30px 0;
+}
+#visual-area {
+    background: url("http://s3.postimg.org/4ef2zwcab/fti_display.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 315px;
+}
+#interface {
+    background-image: url("http://s10.postimg.org/52vylt5lx/fti_body_bg.jpg");
+    border: 1px solid #222;
+    padding: 10px;
+}
+#user-input {
+}
+#email {
+    width: 60%;
+}
+#email.error {
+    border-color: red;
+    border-width: 2px;
+}
+#system-log {
+    height: 210px;
+    overflow: hidden;
+    padding-top: 6px;
+    position: relative;
+}
+#overlay {
+    background: none repeat scroll 0 0 #000;
+    height: 95%;
+    outline: 6px ridge #4e5f73;
+    position: absolute;
+    width: 93%;
+}
+#overlay.blink {
+}
+#system-log #contents {
+    padding: 5px;
+}
+ul#system {
+    margin-bottom: 0;
+    padding: 0;
+}
+ul#system li {
+    color: green;
+    font-family: Verdana,sans-serif;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0;
+}
+button.btn-connect {
+    float: right;
+}
+a.btn-connect {
+    float: right;
+}
+#progress {
+    clear: both;
+    height: 3px;
+    transition-duration: 11s;
+    width: 0;
+}
+div#resources-frame {
+    height: 160px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+div#valut-door {
+    background: url("http://s18.postimg.org/ure5vngbd/door.jpg") no-repeat scroll center bottom / cover rgba(0, 0, 0, 0);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+div#valut-door div#activation-required {
+    margin-top: 55px;
+}
+div#valut-door #password {
+    float: left;
+    margin-left: 15%;
+    margin-right: 10px;
+    width: 50%;
+}
+div#coc-resources > div {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 35px;
+}
+div#coc-resources div.gems {
+    background: url("http://s30.postimg.org/4rjw2moul/27px_Gem.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+div#coc-resources div.gold {
+    background: url("http://s3.postimg.org/pou7xnodr/27px_Gold.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+div#coc-resources div.elixir {
+    background: url("http://s3.postimg.org/tmhhn2b73/27px_Elixir.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+div#coc-resources div.dark-elixir {
+    background: url("http://s3.postimg.org/li9diborz/27px_Dark_elixir.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+div#coc-resources div.townhall {
+    background: url("http://s3.postimg.org/zd7o0sj73/27px_townhall.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+div#coc-resources > div input {
+    width: 100px;
+}
+#activation-required {
+    display: none;
+}
+#update {
+    padding-left: 15px;
+    float: right;
+    margin-top: 10px;
+}
+
+.howto-header-button font 
+{
+font-size: 19px;
+}
+
+.howto-header-button.hack font
+{
+font-size: 25px;
+}
+
+.footer-text,
+.footer-text p 
+{
+font-weight: normal;
+font-family: "monda";
+}
+
+.footer-text p 
+{
+padding: 0;
+}
+
+.footer-text
+{
+padding: 10px;
+}
+
+.video-proof 
+{
+font-size: 25px;
+margin-top: 5px;
+display: inline-block;
+margin-bottom: 20px;
+width: 100%;
+font-family: 'bad_blockhead';
+text-align: center;
+}
+
+#show-time-wrapper
+{
+display: block;
+text-align: center;
+color: rgb(224, 62, 62);
+font-size: 40px;
+}
+
+.popup-text
+{
+position: absolute;
+text-align: center;
+bottom: 0;
+width: 100%;
+font-size: 20px;
+color: #fff;
+background: rgba(224, 62, 62,.6);
+padding: 8px 0;
+}
+
+.popup-text a
+{
+color: #DDE47D;
+display: inline-block;
+margin-left: 5px;
+}
+
+.purechat
+{
+display: none;
+}
+
+#stp-bg
+{
+z-index: 999999999;
+}
+
+/*-- MEDIAQUERIES --*/
+
+@media (max-width: 600px) {
+body .container {
+    width: 100%;
+}
+#coc-resources .col-md-6 {
+    float: left;
+}
+#email {
+    float: left;
+}
+#resources-frame {
+    clear: both;
+}
+#system-log {
+    left: 6px;
+    top: 4px;
+    width: 99%;
+}
+}
+@media (min-width: 601px) {
+body .container {
+    width: 100%;
+}
+#email {
+    width: 65%;
+}
+}
+@media (min-width: 801px) {
+body .container {
+    width: 890px;
+}
+@media (max-width: 768px) {
+#system-log {
+    left: 6px;
+    top: 8px;
+    width: 100%;
+}
+#stats h3 {
+    margin-top: 50px;
+}
+}
+@media (min-width: 1200px) {
+body {
+    background-image: url("kanann.png"), url("kiri.png"), url("http://s1.postimg.org/asdl4bu3z/fti_bckg.jpg");
+    background-position: right top, left top, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+}
+#stats {
+    clear: both;
+    font-family: Verdana;
+    font-variant: small-caps;
+}
+#stats h3 {
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+#stats ul {
+    padding: 0;
+}
+#stats li {
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 2px 0;
+    padding: 0;
+    text-align: center;
+}
+#stats li span {
+    font-size: 15px;
+}
+#stat-gems {
+    color: green;
+}
+#stat-gold {
+    color: gold;
+}
+#stat-elixir {
+    color: purple;
+}
+div.buttons-row a {
+    background-color: rgba(39, 39, 39, 0.8);
+    border-left: 2px solid #3f3f3f;
+    border-right: 2px solid #3f3f3f;
+    border-top: 2px solid #3f3f3f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    font-family: "ruslan display";
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -60px;
+    padding: 1px;
+    text-align: center;
+    transition-duration: 0.25s, 0.25s;
+    transition-property: border, color;
+    z-index: 10000;
+}
+@media only screen and (min-width: 1px) {
+div.buttons-row a {
+    font-size: 1em;
+    width: 100px;
+}
+}
+@media only screen and (min-width: 320px) {
+div.buttons-row a {
+    font-size: 1.6em;
+    width: 140px;
+}
+}
+@media only screen and (min-width: 768px) {
+div.buttons-row a {
+    font-size: 1.9em;
+    width: 200px;
+}
+}
+div.buttons-row a:hover {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    color: #ffa100;
+    text-decoration: none;
+}
+div.buttons-row a.float-left {
+    float: left;
+    position: absolute;
+}
+div.buttons-row a.float-right {
+    position: absolute;
+    right: 0;
+}
+h1 {
+    font-family: "monda";
+    text-align: center;
+}
+p {
+    font-family: "monda";
+    font-size: 110%;
+    line-height: 160%;
+    padding: 0 20px;
+    text-align: justify;
+}
+p img {
+    padding: 10px;
+}
+p img.right {
+    float: right;
+    padding-right: 0;
+}
+p img.left {
+    float: left;
+    padding-left: 0;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 640px) {
+
+h1
+{
+font-size: 20px;
+}
+
+.header-button font,
+.howto-header-button font 
+{
+font-size: 14px;
+}
+
+#visual-area
+{
+background-size: 100%;
+position: relative;
+background-position: 0 24px;
+}
+
+#visual-area img.logo 
+{
+display: block;
+position: absolute;
+width: 350px;
+margin-left: -175px;
+top: 0;
+margin-top: -30px;
+left: 50%;
+}
+
+#visual-area img.gua 
+{
+margin-top: 0;
+width: 80px;
+position: absolute;
+bottom: 5px;
+}
+
+#system-log
+{
+width: auto;
+}
+
+#overlay
+{
+width: 95%;
+}
+
+.home-page-video,
+#thumb,
+#mvcontainer
+{
+width: 100%;
+height: auto;
+}
+
+.home-page-video
+{
+padding: 0 15px;
+}
+
+.footer-text-link
+{
+padding-left: 10px;
+display: inline-block;
+}
+
+.footer-text
+{
+padding-top: 10px;
+padding-left: 10px;
+}
+
+.footer-text p
+{
+padding-left: 0;
+}
+
+.purechat.purechat-bottom-right
+{
+margin-right: -50px;
+}
+
+#livechat
+{
+display: none !important;
+}
+
+}
+
+@media only screen and (max-width: 360px) { 
+
+div#coc-resources>div input
+{
+width: 90px;
+}
+
+}
+
+/* DISABLE INPUT ZOOM */
+
+input[type='text']:focus,
+input[type='number']:focus,
+textarea:focus {
+	font-size: 16px;
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ 
+	select:focus,
+	textarea:focus,
+	input:focus {
+		font-size: 16px;
+	}
+}
